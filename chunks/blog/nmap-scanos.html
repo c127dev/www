@@ -1,0 +1,108 @@
+<img src="img/blog/nmap-scanos/banner.png" class="post-banner" alt="Banner de Nmap: Detector de Sistema Operativo"></img>
+<h1 class="text-center title">
+    Nmap: Detector de Sistema Operativo
+</h1>
+<p>
+    Nmap es una de las herramientas mas poderosas y ampliamente utilizadas en el ámbito de la ciberseguridad, administración de redes y pentesting. Entre sus múltiples capacidades, destaca la detección de sistemas operativos, una función esencial para evaluar redes y mejorar la seguridad informática.
+</p>
+<h3 class="text-start">
+    ¿Qué es Nmap y para qué sirve?
+</h3>
+<p>
+    Nmap (Network Mapper) es un software de código abierto, diseñado para poder escanear redes. Su objetivo principal es descubrir hosts activos, servicios disponibles y características específicas de los sistemas operativos en los dispositivos conectados.
+</p>
+<p>
+    El proceso de detección de sistemas operativos con Nmap, se consigue al enviar paquetes especialmente formados a los dispositivos objetivo. La respuesta recibida ayuda a identificar el sistema operativo, su versión y otros datos relevantes, como la configuración de la pila TCP/IP.
+</p>
+<img src="img/blog/nmap-scanos/nmap-op.png" class="post-image" alt="Ejemplo de salida de Nmap"></img>
+
+<h3 class="text-start">
+    ¿Por qué es importante la detección de sistemas operativos?
+</h3>
+<p>
+    La identificación de sistemas operativos tiene múltiples aplicaciones:
+</p>
+<div class="post-list">
+    <li>
+        Auditorías de seguridad: Ayuda a detectar dispositivos vulnerables.
+    </li>
+    <li>
+        Mantenimiento de redes: Permite a los administradores inventariar equipos y sistemas operativos.
+    </li>
+    <li>
+        Pruebas de penetración: Es crucial para planificar estrategias de explotación específicas.
+    </li>
+</div>
+
+<img src="img/blog/nmap-scanos/enterprise-net.png" class="post-image" alt="Red empresarial"></img>
+
+<h3 class="text-start">
+    ¿Cómo realizar un escaneo de sistema operativo con Nmap?
+</h3>
+
+<p>
+    Para usar la detección de sistemas operativos, se utiliza el flag -O en los comandos de Nmap. Por ejemplo:
+</p>
+
+<code>
+    nmap -O 192.168.1.1
+</code>
+
+<p>
+    Este comando intentará identificar el sistema operativo del dispositivo con la dirección IP 192.168.1.1.
+</p>
+<p>
+    Algunos consejos prácticos:
+</p>
+
+<div class="post-list">
+    <li>
+        Asegurarse de tener permisos para escanear la red.
+    </li>
+    <li>
+        Combinar la flag -O con otros, como -sS para escaneos más detallados.
+    </li>
+    <li>
+        Usar nmap -A para obtener información adicional, como servicios y versiones de software.
+    </li>
+</div>
+
+<img src="img/blog/nmap-scanos/nmap-scan.png" class="post-image" alt="Escaneo de red con Nmap"></img>
+
+<h3 class="text-start">
+    Limitaciones y buenas prácticas
+</h3>
+
+<p>
+    Aunque Nmap es altamente preciso, la detección de sistemas operativos tiene sus limitaciones:
+</p>
+
+<div class="post-list">
+    <li>
+        Dispositivos con firewalls configurados pueden bloquear la detección.
+    </li>
+    <li>
+        Algunas configuraciones personalizadas de red pueden dar resultados ambiguos.
+    </li>
+</div>
+
+<p>
+    Para mejorar la precisión:
+</p>
+
+<div class="post-list">
+    <li>
+        Escanea desde distintos segmentos de red.
+    </li>
+    <li>
+        Usa herramientas complementarias junto con Nmap.
+    </li>
+</div>
+
+<img src="img/blog/nmap-scanos/net-routes.png" class="post-image" alt="Rutas de red"></img>
+
+<h3 class="text-start">
+    Demostración de escaneo a un sistema Windows 10
+</h3>
+
+<video src="video/scan-os-example-compress.mp4" controls></video>

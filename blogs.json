@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Nmap: Detector de Sistema Operativo",
+        "date": "2024-12-04",
+        "description": "Nmap es una herramienta poderosa y ampliamente utilizada en el ámbito de la ciberseguridad y administración de redes. Entre sus múltiples capacidades, destaca la detección de sistemas operativos, una función esencial para evaluar redes y mejorar la seguridad informática.",
+        "image": "img/blog/nmap-scanos/banner.png",
+        "page": "nmap-scanos"
+    },
+    {
+        "title": "El poder de los Contenedores Docker",
+        "date": "2024-12-04",
+        "description": "Docker ha revolucionado la forma en que los desarrolladores construyen, envían y ejecutan aplicaciones. Con un enfoque en la portabilidad, escalabilidad y eficiencia, los contenedores Docker se han convertido en una herramienta indispensable en el desarrollo de software moderno.",
+        "image": "img/blog/docker-power/banner.png",
+        "page": "docker-power"
+    }
+]

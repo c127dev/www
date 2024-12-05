@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px calc(100vw / 4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.android-menu {
+    display: none;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+
+.android-menu.show {
+    top: 66px;
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.android-menu ul {
+    list-style: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.android-menu ul li {
+    padding: 10px 0;
+    width: 100vw;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 15px calc(100vw / 8);
+    }
+}
+
+@media (max-width: 700px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    header nav ul.show {
+        display: flex;
+    }
+}
+
+header *::selection {
+    background: none;
+    color: inherit;
+}
+
+footer {
+    background-color: rgb(51, 51, 51);
+    box-shadow: 0 0 10px rgba(51, 51, 51, 1);
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.contact-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.footer-site-name {
+    margin: 10px 0 0 0;
+}
+
+.my-copyright {
+    margin: 20px 0 0 0;
+}
+
+dummy {
+    display: block;
+    height: calc(100vh);
+}
+
+.site-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #000;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6b6b6b;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2b2b2b;
+}
