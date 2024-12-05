@@ -49,7 +49,7 @@
         head.appendChild(addExternalJS('scripts/simplebar.min.js'));
         head.appendChild(addExternalJS(`scripts/pages/${pageName}.js`));
 
-        changeFavicon("favicon.ico");
+        //changeFavicon("favicon.ico");
 
         try {
             const headerHTML = await chunkLoader('chunks/header.html');
